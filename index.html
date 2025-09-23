@@ -778,7 +778,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">Master Tech</div>
+    <a href="#" class="logo" onclick="scrollToTop(event)">Master Tech</a>
     <button class="menu-toggle" id="menuToggle">
       <i class="fas fa-bars"></i>
     </button>
@@ -1289,4 +1289,17 @@
   </script>
 </body>
 </html>
+
+
+
+  <script>
+    function scrollToTop(event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
 
